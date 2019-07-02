@@ -1,0 +1,195 @@
+// NOTE:: Styles placed here should be targeted for phones and site specific css for things related directly to the new site, custom stylizing unrelated to default HTML styles. For example, sidebar information or page layout.
+
+//
+// Imports
+//
+
+@import 'core';
+
+
+//
+// Defaults
+//
+
+.main-container{
+  padding: 0 20px;
+}
+
+.main-container > .row.container {
+  background: white;
+  @include border-radius($radius);
+}
+
+//
+// Smart Login
+//
+iframe .login-widget-container 
+{
+  border: 1px solid $cp5 !important;
+  h6{
+    background: $cp5 !important;
+    @include font-size(18px);
+  }
+}
+
+//
+// Header
+//
+.navbar .logo{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  img{
+    max-width: 300px;
+    filter: brightness(0) invert(1);
+  }
+}
+
+.navbar-header, .region-navigation{
+  margin: 0 !important;
+  background: $cp3;
+}
+
+ul#superfish-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-callout{
+  padding-top: 20px;
+  a{
+    color: white;
+    @include font-size(32px);
+    font-family: $special;
+    font-weight: 100;
+    &:hover{
+      color: $cp3;
+    }
+  }
+}
+
+section#block-mainnavigation {
+  position: relative;
+}
+
+.field-group-background-image{
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  [class*="col-sm-"]{
+    padding: 20px;
+    //background: rgba($color: #ffffff, $alpha: .5);
+  }
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto !important;
+}
+
+.main-container {
+  padding: 0;
+  .container{
+    width: 100%;
+  }
+}
+
+.field--name-field-page-content > .field--item{
+    margin-bottom: 0 !important;
+}
+
+.field--name-field-background-color{
+  display: none;
+}
+//
+// Menu
+.main-menu{
+  background: $cp1;
+  a{
+    color: white;
+  }
+}
+
+ul.sf-menu a, ul.sf-menu .sf-with-ul{
+  padding: 1em;
+}
+
+.sf-sub-indicator{
+  display: none;
+}
+
+ul.sf-menu.sf-horizontal.sf-shadow ul, ul.sf-menu.sf-vertical.sf-shadow ul, ul.sf-menu.sf-navbar.sf-shadow ul ul{
+  background: darken($cp1, 10%);
+  top: auto;
+  box-shadow: none;
+  a:hover{
+    background: darken($cp1, 15%);
+  }
+}
+
+footer .wrapper{
+  width: 100%;
+  max-width: 100%;
+}
+
+//
+// Banner
+.paragraph--type--slide img {
+  width: 100%;
+  height: auto;
+}
+
+.paragraph--type--slideshow{
+  position: relative;
+}
+figcaption {
+  position: absolute;
+  bottom: 20px;
+  padding: 20px 40px;
+  width: 1200px;
+  right: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: rgba(255,255,255,.9);
+}
+
+//
+// File upload
+.file > span{
+  border: none;
+  &.file-icon, &.file-size{
+    display: none;
+  }
+}
+.file{
+  position: relative;
+  padding-left: 30px;
+}
+.file::before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background: $cp5;
+  border-radius: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+
+//
+//  Mobile First Development
+//
+@import 'tablet';
+@import 'desktop';
+
+@media (max-width: 600px) and (orientation: portrait) {
+    h1{
+      @include font-size(28px);
+      line-height: 1.5em;
+    }
+    h2{
+      @include font-size(23px);
+      line-height: 1.5em;
+    }
+}

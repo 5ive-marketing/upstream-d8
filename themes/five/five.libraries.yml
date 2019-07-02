@@ -1,0 +1,10 @@
+global-styling:
+  css:
+    theme:
+      css/styles.css: {}
+  js:
+    js/five.js: {}
+    dependencies:
+    - core/jquery
+  ckeditor_stylesheets:
+    - css/styles.css

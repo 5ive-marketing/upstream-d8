@@ -1,0 +1,30 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: '5ive Marketing (Bootstrap)'
+description: 'Theme developed by 5ive Marketing for Explore Oregon Golf'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+  - 'five/global-styling'
+
+global-scripts:
+    version: 1.x
+    js:
+        js/five.js: {}
+
+ckeditor_stylesheets:
+  - css/styles.css

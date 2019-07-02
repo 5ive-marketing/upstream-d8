@@ -1,0 +1,7 @@
+{#
+    multi-column paragraph default wrapper.
+#}
+
+{% for item in items %}
+<div class="col-sm-{{ 12 // loop.length }}">{{ item.content }}</div>
+{% endfor %}

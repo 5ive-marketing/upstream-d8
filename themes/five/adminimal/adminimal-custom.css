@@ -1,0 +1,37 @@
+@media screen and (min-width: 780px), (min-device-height: 780px) and (orientation: landscape) {
+	
+	.layout-region-node-main, .layout-region-node-footer {
+	    float: none;
+	    width: 100%;
+	    padding-right: 0em;
+	    box-sizing: border-box;
+	}
+	
+	.layout-region-node-secondary {
+	    float: none;
+	    width: 100%;
+	}
+
+	.backend-column > div[id*="edit-field-page-content"] > div[id*='field-page-content'] > .form-item > table > tbody {
+		display: flex;
+	}
+
+	.backend-column > div[id*="edit-field-page-content"] > div[id*='field-page-content'] > .form-item > table > tbody > tr{
+		flex-basis: 50%;
+	}
+
+	.backend-column > div[id*="edit-field-page-content"] > div[id*='field-page-content'] > .form-item > table > tbody > tr.odd{
+		background: #f5f5f5;
+	}
+
+	.backend-column > div[id*="edit-field-page-content"] > div[id*='field-page-content'] > .form-item > table > tbody > tr.even{
+		background: #fcfcfc;
+	}
+	.backend-column-content{
+		padding: 10px;
+
+	}
+
+
+
+}
