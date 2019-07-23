@@ -1,0 +1,13 @@
+name: Field Group Background
+type: module
+description: 'Field group background image or color selector module.'
+# core: 8.x
+package: 5ive
+dependencies:
+  - drupal:field
+  - drupal:field_group
+
+# Information added by Drupal.org packaging script on 2018-07-20
+version: '8.x-1.3'
+core: '8.x'
+
