@@ -21,16 +21,5 @@ include __DIR__ . "/settings.pantheon.php";
  */
 $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
-    include $local_settings;
+  include $local_settings;
 }
-$databases['default']['default'] = array (
-  'database' => 'Upstream',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['hash_salt'] = '2QknMqeFspSOe9x68Vp1o-Yox6jl9Z6jRiLyZzDZHAuPEOdpx45qk-CYGrfqNEQSVBVwQ_W1CA';
